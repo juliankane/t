@@ -1,0 +1,5 @@
+# Request
+string[] coordinate_names # accept a list of named coordinates
+---
+# Response
+geometry_msgs/PoseStamped[] pose_coordinates # list of poses that map to the location 

@@ -6,4 +6,4 @@ log
 .data
 errors.log
 .la
-turtlebot4_simulator/
+src/turtlebot4_simulator/

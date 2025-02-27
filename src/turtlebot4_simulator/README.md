@@ -1,6 +1,5 @@
 # Turtlebot4 Simulator
-
-Turtlebot4 Simulation using Harmonic Gazebo for ROS 2 Jazzy.
+A fork from [turtlebot4_simulator](https://github.com/turtlebot/turtlebot_simulator)
 
 Visit the [TurtleBot 4 User Manual](https://turtlebot.github.io/turtlebot4-user-manual/software/turtlebot4_simulator.html) for details.
 

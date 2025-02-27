@@ -1,0 +1,14 @@
+alias hs_w_keepout='ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py rviz:=true localization:=true nav2:=true keepout:=true world:=hospital slam:=true x:=0.10 y:=1.00'
+alias hs_nav2='ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py rviz:=true localization:=true nav2:=true keepout:=false world:=hospital x:=0.10 y:=1.00'
+alias hs_slam='ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py rviz:=true nav2:=true slam:=true world:=hospital x:=0.10 y:=1.00'
+
+
+alias map_serv='ros2 run services map_to_pose_service --ros-args -p waypoints:=hospital.yaml'
+alias keepout_zones='ros2 launch courier_navigation keepout.launch.py'
+alias zone_curved_walls='ros2 launch courier_navigation keepout.launch.py filter:=hospital_zones_w_curved_walls.yaml'
+alias zone_lanes='ros2 launch courier_navigation keepout.launch.py filter:=hospital_zones_w_lanes.yaml'
+alias zone_avoid_center='ros2 launch courier_navigation keepout.launch.py filter:=hospital_zones_w_avoid_center.yaml'
+alias srcws='source install/setup.bash'
+alias bldws='rosdep install --from-path src -yi && colcon build --symlink-install'
+alias rebuild='rm -r build log install 2>/dev/null; bldws'
+
